@@ -10,6 +10,11 @@ const columns = ref<Column[]>([
                 id: nanoid(),
                 title: "Create marketing landing page",
                 createdAt: new Date()
+            },
+            {
+                id: nanoid(),
+                title: "Develop new feature",
+                createdAt: new Date()
             }
         ],
     },
@@ -38,14 +43,15 @@ const columns = ref<Column[]>([
 ]);
 </script>
 <template>
-    <div>
-        <div v-for="column in columns" :key="column.id">
-            <header>
+    <div class="flex items-start overflow-x-auto gap-4">
+        <div v-for="column in columns" :key="column.id" class="column bg-gray-200 p-5 rounded min-w-[250px]">
+            <header class="font-bold mb-4">
                 {{ column.title }}
             </header>
-            <p v-for="task in column.tasks" :key="task.id">
-                {{ task.title }}
-            </p>
+            <TaskFlowTask v-for="task in column.tasks" :task="task" />
+            <footer>
+                <button> Add a card</button>
+            </footer>
         </div>
     </div>
 </template>
