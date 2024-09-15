@@ -1,75 +1,7 @@
-# Nuxt 3 Minimal Starter
+# Drag-and-Drop TaskFlow Board with Vue3 and Nuxt3
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This project is a functional and dynamic UI for managing tasks. You can create new tasks and columns, drag and drop tasks to different columns, drag and drop to re-order columns and Alt (or Option) drag to clone tasks and more!
 
-## Setup
+![image](https://github.com/user-attachments/assets/b509aff0-2ebe-4882-bcb9-ad63e26a3b86)
 
-Make sure to install the dependencies:
 
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
