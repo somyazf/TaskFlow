@@ -28,7 +28,7 @@ onKeyStroke("Backspace", (e) => {
 <style scoped>
  /* For the chosen task */
 .sortable-chosen .task {
-    border-left: 2px solid #8939ad;
+    border-left: 3px solid #8939ad;
 }
 
 /* For the dragging task */
@@ -44,7 +44,7 @@ onKeyStroke("Backspace", (e) => {
 
 .sortable-ghost .task::after {
     content: "";
-    @apply absolute top-0 bottom-0 left-0 right-0 bg-slate-200 rounded;
+    @apply absolute top-0 bottom-0 left-0 right-0 bg-slate-100 rounded;
 }
 
 .task:focus,
